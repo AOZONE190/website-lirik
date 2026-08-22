@@ -7,12 +7,13 @@ export function generateStaticParams() {
   return songs.map((song) => ({ slug: song.slug }));
 }
 
-export default function SongDetailPage({
+export default async function SongDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const song = getSongBySlug(params.slug);
+  const { slug } = await params;
+  const song = getSongBySlug(slug);
   if (!song) return notFound();
 
   const [from, to] = song.gradient;
