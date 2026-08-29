@@ -262,3 +262,24 @@ footer{
   .song-hero{ grid-template-columns: 1fr; }
   .song-hero .cover-big{ max-width: 200px; }
 }
+
+.search-input{
+  width: 100%;
+  max-width: 480px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+.search-input::placeholder{ color: var(--text-soft); }
+.search-input:focus{
+  outline: none;
+  border-color: var(--accent-a);
+}
+.search-empty{
+  color: var(--text-soft);
+  margin-top: 24px;
+}
