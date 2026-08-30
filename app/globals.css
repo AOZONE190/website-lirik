@@ -283,3 +283,16 @@ footer{
   color: var(--text-soft);
   margin-top: 24px;
 }
+
+.page-glow{
+  position: fixed;
+  top: -15%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at 40% 40%, rgba(177,78,255,0.22), transparent 60%),
+              radial-gradient(circle at 60% 60%, rgba(255,77,141,0.18), transparent 60%);
+  filter: blur(70px);
+  z-index: -1;
+  pointer-events: none;
+}

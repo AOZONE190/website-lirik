@@ -14,6 +14,7 @@ export default function CariPage() {
 
   return (
     <main>
+        <div className="page-glow" aria-hidden="true" />
       <section className="section" style={{ paddingTop: "8vh" }}>
         <h1 className="display" style={{ fontSize: "2rem", marginBottom: 24 }}>
           Cari Lagu

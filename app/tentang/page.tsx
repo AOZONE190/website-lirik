@@ -3,6 +3,7 @@ import Waveform from "@/components/Waveform";
 export default function TentangPage() {
   return (
     <main>
+        <div className="page-glow" aria-hidden="true" />
       <section className="section" style={{ paddingTop: "8vh" }}>
         <div className="kicker">Tentang Kami</div>
         <h1
