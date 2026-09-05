@@ -25,15 +25,15 @@ export default function HeroOrb() {
           );
         })}
         <defs>
-          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#B14EFF" />
-            <stop offset="100%" stopColor="#FF4D8D" />
-          </linearGradient>
-          <radialGradient id="coreGrad">
-            <stop offset="0%" stopColor="#FF4D8D" />
-            <stop offset="100%" stopColor="#B14EFF" />
-          </radialGradient>
-        </defs>
+  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" style={{ stopColor: "var(--accent-a)" }} />
+    <stop offset="100%" style={{ stopColor: "var(--accent-b)" }} />
+  </linearGradient>
+  <radialGradient id="coreGrad">
+    <stop offset="0%" style={{ stopColor: "var(--accent-b)" }} />
+    <stop offset="100%" style={{ stopColor: "var(--accent-a)" }} />
+  </radialGradient>
+       </defs>
       </svg>
     </div>
   );
